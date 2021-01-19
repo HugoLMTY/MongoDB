@@ -14500,7 +14500,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sportifs</span><span class="o">.</span><span class="n">find</span><span class="p">({</span> <span class="s2">&quot;Age&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;$in&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">40</span><span class="p">]}</span> <span class="p">},</span> <span class="p">{</span><span class="s2">&quot;_id&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Nom&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">}):</span>
@@ -14524,12 +14524,12 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;Nom&#39;: &#39;DORLEANS&#39;, &#39;Age&#39;: 32}
-{&#39;Nom&#39;: &#39;RABAHI&#39;, &#39;Age&#39;: 40}
-{&#39;Nom&#39;: &#39;TIZEGHAT&#39;, &#39;Age&#39;: 32}
-{&#39;Nom&#39;: &#39;BAZOUD&#39;, &#39;Age&#39;: 32}
-{&#39;Nom&#39;: &#39;HOUEL&#39;, &#39;Age&#39;: 40}
-{&#39;Nom&#39;: &#39;BONE&#39;, &#39;Age&#39;: 32}
+<pre>{&#39;Nom&#39;: &#39;DORLEANS&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
+{&#39;Nom&#39;: &#39;RABAHI&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 40}
+{&#39;Nom&#39;: &#39;TIZEGHAT&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
+{&#39;Nom&#39;: &#39;BAZOUD&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
+{&#39;Nom&#39;: &#39;HOUEL&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 40}
+{&#39;Nom&#39;: &#39;BONE&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
 </pre>
 </div>
 </div>
@@ -14617,10 +14617,10 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[227]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sportifs</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s2">&quot;$or&quot;</span><span class="p">:[{</span> <span class="s2">&quot;Age&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">},</span> <span class="p">{</span><span class="s2">&quot;Sexe&quot;</span><span class="p">:</span> <span class="s2">&quot;F&quot;</span><span class="p">}]},</span> <span class="p">{</span><span class="s2">&quot;_id&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Nom&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">}):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sportifs</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s2">&quot;$or&quot;</span><span class="p">:[{</span> <span class="s2">&quot;Age&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;$gte&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">}},</span> <span class="p">{</span><span class="s2">&quot;Sexe&quot;</span><span class="p">:</span> <span class="s2">&quot;F&quot;</span><span class="p">}]},</span> <span class="p">{</span><span class="s2">&quot;_id&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Nom&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Age&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Sexe&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">}):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 </pre></div>
 
@@ -14641,54 +14641,57 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;Nom&#39;: &#39;HUE&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;DORLEANS&#39;, &#39;Age&#39;: 32}
-{&#39;Nom&#39;: &#39;COMES&#39;, &#39;Age&#39;: 22}
-{&#39;Nom&#39;: &#39;RETALDI&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;ANTUNES&#39;, &#39;Age&#39;: 23}
-{&#39;Nom&#39;: &#39;CAILLIOT&#39;, &#39;Age&#39;: 24}
-{&#39;Nom&#39;: &#39;HOSNI&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;LEJEUNE&#39;, &#39;Age&#39;: 23}
-{&#39;Nom&#39;: &#39;MICHEL&#39;, &#39;Age&#39;: 23}
-{&#39;Nom&#39;: &#39;ROUSSEL&#39;, &#39;Age&#39;: 22}
-{&#39;Nom&#39;: &#39;LAZZARI&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;DELOVINA&#39;, &#39;Age&#39;: 22}
-{&#39;Nom&#39;: &#39;MATHIEU&#39;, &#39;Age&#39;: 23}
-{&#39;Nom&#39;: &#39;GROEN&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;HEDDI&#39;, &#39;Age&#39;: 23}
-{&#39;Nom&#39;: &#39;JOUVE&#39;, &#39;Age&#39;: 24}
-{&#39;Nom&#39;: &#39;GUERRAOUI&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;CLERICE&#39;, &#39;Age&#39;: 23}
-{&#39;Nom&#39;: &#39;TIZEGHAT&#39;, &#39;Age&#39;: 32}
-{&#39;Nom&#39;: &#39;BAZOUD&#39;, &#39;Age&#39;: 32}
-{&#39;Nom&#39;: &#39;LANOE&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;VONTHRON&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;REGNAULD&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;MARIE&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;SARRAZIN&#39;, &#39;Age&#39;: 39}
-{&#39;Nom&#39;: &#39;HALGATTE&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;DROULLON&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;BONE&#39;, &#39;Age&#39;: 32}
-{&#39;Nom&#39;: &#39;SEHIER&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;MICHEL&#39;, &#39;Age&#39;: 22}
-{&#39;Nom&#39;: &#39;BELUAU&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;FERREIRA&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;BECQUET&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;SWERTVAEGER&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;GALLOIS&#39;, &#39;Age&#39;: 30}
-{&#39;Nom&#39;: &#39;LABOULAIS&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;DUDOUIT&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;MADELAINE&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;BESNARD&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;BELZ&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;BONNET&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;CORNET&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;BEUZELIN&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;GRANDIDIER&#39;, &#39;Age&#39;: 26}
-{&#39;Nom&#39;: &#39;LENEVEU&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;CLERICE&#39;, &#39;Age&#39;: 25}
-{&#39;Nom&#39;: &#39;COMES&#39;, &#39;Age&#39;: 27}
-{&#39;Nom&#39;: &#39;BELZ&#39;, &#39;Age&#39;: 27}
+<pre>{&#39;Nom&#39;: &#39;HUE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;DORLEANS&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
+{&#39;Nom&#39;: &#39;COMES&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 22}
+{&#39;Nom&#39;: &#39;RETALDI&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;ANTUNES&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 23}
+{&#39;Nom&#39;: &#39;CAILLIOT&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 24}
+{&#39;Nom&#39;: &#39;HOSNI&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;LEJEUNE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 23}
+{&#39;Nom&#39;: &#39;MICHEL&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 23}
+{&#39;Nom&#39;: &#39;RABAHI&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 40}
+{&#39;Nom&#39;: &#39;ROUSSEL&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 22}
+{&#39;Nom&#39;: &#39;LAZZARI&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;DELOVINA&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 22}
+{&#39;Nom&#39;: &#39;MATHIEU&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 23}
+{&#39;Nom&#39;: &#39;GROEN&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;HEDDI&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 23}
+{&#39;Nom&#39;: &#39;JOUVE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 24}
+{&#39;Nom&#39;: &#39;GUERRAOUI&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;CLERICE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 23}
+{&#39;Nom&#39;: &#39;TIZEGHAT&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
+{&#39;Nom&#39;: &#39;BAZOUD&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
+{&#39;Nom&#39;: &#39;LANOE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;VONTHRON&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;REGNAULD&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;MARIE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;SARRAZIN&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 39}
+{&#39;Nom&#39;: &#39;HALGATTE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;DROULLON&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;HOUEL&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 40}
+{&#39;Nom&#39;: &#39;LEROUX&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 36}
+{&#39;Nom&#39;: &#39;BONE&#39;, &#39;Sexe&#39;: &#39;M&#39;, &#39;Age&#39;: 32}
+{&#39;Nom&#39;: &#39;SEHIER&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;MICHEL&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 22}
+{&#39;Nom&#39;: &#39;BELUAU&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;FERREIRA&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;BECQUET&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;SWERTVAEGER&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;GALLOIS&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 30}
+{&#39;Nom&#39;: &#39;LABOULAIS&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;DUDOUIT&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;MADELAINE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;BESNARD&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;BELZ&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;BONNET&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;CORNET&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;BEUZELIN&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;GRANDIDIER&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 26}
+{&#39;Nom&#39;: &#39;LENEVEU&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;CLERICE&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 25}
+{&#39;Nom&#39;: &#39;COMES&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 27}
+{&#39;Nom&#39;: &#39;BELZ&#39;, &#39;Sexe&#39;: &#39;F&#39;, &#39;Age&#39;: 27}
 </pre>
 </div>
 </div>
@@ -15255,11 +15258,11 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[200]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[236]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">gym</span><span class="o">.</span><span class="n">find</span><span class="p">({</span>
-     <span class="s2">&quot;$and&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;Seances.Libelle&quot;</span><span class="p">:</span> <span class="s2">&quot;Basket ball&quot;</span><span class="p">},{</span><span class="s2">&quot;Seances.Libelle&quot;</span><span class="p">:</span> <span class="s2">&quot;Volley ball&quot;</span><span class="p">}]}</span>
+     <span class="s2">&quot;$or&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;Seances.Libelle&quot;</span><span class="p">:</span> <span class="s2">&quot;Basket ball&quot;</span><span class="p">},{</span><span class="s2">&quot;Seances.Libelle&quot;</span><span class="p">:</span> <span class="s2">&quot;Volley ball&quot;</span><span class="p">}]}</span>
 <span class="p">,{</span>
     <span class="s2">&quot;_id&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;NomGymnase&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Seances.Libelle&quot;</span><span class="p">:</span><span class="mi">1</span>
 <span class="p">}):</span>
@@ -15283,11 +15286,47 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;NomGymnase&#39;: &#39;SAINT EXUPERY&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+<pre>{&#39;NomGymnase&#39;: &#39;PAUL ELUARD&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;ARAGON&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;SAINT EXUPERY&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;PAUL ELUARD&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;BRASSENS&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;PREVERT&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;RIMBAUD&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;MOZART&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;RAVEL&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
 
 {&#39;NomGymnase&#39;: &#39;CHOPIN&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
 
+{&#39;NomGymnase&#39;: &#39;BREL&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;SAMOURAI&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;GARCIA LORCA&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hand ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;PABLO NERUDA&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;COCTEAU&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;SIMON&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;BARBARA&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+
 {&#39;NomGymnase&#39;: &#39;BELFEGOR&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}, {&#39;Libelle&#39;: &#39;Volley ball&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;DOLTO&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;PASCAL&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Volley ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
+
+{&#39;NomGymnase&#39;: &#39;BLAISE PASCAL&#39;, &#39;Seances&#39;: [{&#39;Libelle&#39;: &#39;Basket ball&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}, {&#39;Libelle&#39;: &#39;Hockey&#39;}]} 
 
 </pre>
 </div>
@@ -15364,14 +15403,13 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[205]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[235]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sportifs</span><span class="o">.</span><span class="n">find</span><span class="p">({</span>
-    <span class="s2">&quot;Sports.Jouer&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;$exists&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
-    <span class="s2">&quot;IdSportifConseiller&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;$exists&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+    <span class="s2">&quot;IdSportif&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;$in&quot;</span><span class="p">:</span> <span class="n">db</span><span class="o">.</span><span class="n">Sportifs</span><span class="o">.</span><span class="n">distinct</span><span class="p">(</span><span class="s2">&quot;IdSportifConseiller&quot;</span><span class="p">)}</span>
 <span class="p">},{</span>
-    <span class="s2">&quot;_id&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Nom&quot;</span><span class="p">:</span><span class="mi">1</span>
+    <span class="s2">&quot;_id&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Nom&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;IdSportif&quot;</span><span class="p">:</span><span class="mi">1</span>
 <span class="p">}):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 </pre></div>
@@ -15393,139 +15431,18 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;Nom&#39;: &#39;KERVADEC&#39;}
-{&#39;Nom&#39;: &#39;HUE&#39;}
-{&#39;Nom&#39;: &#39;DORLEANS&#39;}
-{&#39;Nom&#39;: &#39;COMES&#39;}
-{&#39;Nom&#39;: &#39;RETALDI&#39;}
-{&#39;Nom&#39;: &#39;GOMEZ&#39;}
-{&#39;Nom&#39;: &#39;ANTUNES&#39;}
-{&#39;Nom&#39;: &#39;BLANDET&#39;}
-{&#39;Nom&#39;: &#39;BONNET&#39;}
-{&#39;Nom&#39;: &#39;BORREL&#39;}
-{&#39;Nom&#39;: &#39;BOYON&#39;}
-{&#39;Nom&#39;: &#39;CAILLIOT&#39;}
-{&#39;Nom&#39;: &#39;CHAMPENOIS&#39;}
-{&#39;Nom&#39;: &#39;COLAS&#39;}
-{&#39;Nom&#39;: &#39;COLOMB&#39;}
-{&#39;Nom&#39;: &#39;HOSNI&#39;}
-{&#39;Nom&#39;: &#39;TESTEMONT&#39;}
-{&#39;Nom&#39;: &#39;TIENER&#39;}
-{&#39;Nom&#39;: &#39;LE BOUCHER&#39;}
-{&#39;Nom&#39;: &#39;LEDUFAUD&#39;}
-{&#39;Nom&#39;: &#39;LEGRAND&#39;}
-{&#39;Nom&#39;: &#39;LEJEUNE&#39;}
-{&#39;Nom&#39;: &#39;MARTORA&#39;}
-{&#39;Nom&#39;: &#39;MICHEL&#39;}
-{&#39;Nom&#39;: &#39;NIELLEZ&#39;}
-{&#39;Nom&#39;: &#39;RABAHI&#39;}
-{&#39;Nom&#39;: &#39;ROUSSEL&#39;}
-{&#39;Nom&#39;: &#39;SCHINK&#39;}
-{&#39;Nom&#39;: &#39;STEMPUT&#39;}
-{&#39;Nom&#39;: &#39;VAN CAUTER&#39;}
-{&#39;Nom&#39;: &#39;RAMPNOUX&#39;}
-{&#39;Nom&#39;: &#39;LHERPINIERE&#39;}
-{&#39;Nom&#39;: &#39;TANQUE&#39;}
-{&#39;Nom&#39;: &#39;DJELOUDANE&#39;}
-{&#39;Nom&#39;: &#39;LAZZARI&#39;}
-{&#39;Nom&#39;: &#39;VASSEMON&#39;}
-{&#39;Nom&#39;: &#39;MOREL&#39;}
-{&#39;Nom&#39;: &#39;VALIN&#39;}
-{&#39;Nom&#39;: &#39;DELOVINA&#39;}
-{&#39;Nom&#39;: &#39;LEHOUX&#39;}
-{&#39;Nom&#39;: &#39;MATHIEU&#39;}
-{&#39;Nom&#39;: &#39;ADIBO&#39;}
-{&#39;Nom&#39;: &#39;DAUXIAN&#39;}
-{&#39;Nom&#39;: &#39;GROEN&#39;}
-{&#39;Nom&#39;: &#39;HEDDI&#39;}
-{&#39;Nom&#39;: &#39;JOUVE&#39;}
-{&#39;Nom&#39;: &#39;KALOMBO&#39;}
-{&#39;Nom&#39;: &#39;LOPEZ&#39;}
-{&#39;Nom&#39;: &#39;DANDOIS&#39;}
-{&#39;Nom&#39;: &#39;DEMMER&#39;}
-{&#39;Nom&#39;: &#39;ELKABBADJ&#39;}
-{&#39;Nom&#39;: &#39;FEROLDI&#39;}
-{&#39;Nom&#39;: &#39;GUERRAOUI&#39;}
-{&#39;Nom&#39;: &#39;BOISSEAU&#39;}
-{&#39;Nom&#39;: &#39;GUIGUI&#39;}
-{&#39;Nom&#39;: &#39;TIZEGHAT&#39;}
-{&#39;Nom&#39;: &#39;LAZARRE&#39;}
-{&#39;Nom&#39;: &#39;BAZOUD&#39;}
-{&#39;Nom&#39;: &#39;AMAND&#39;}
-{&#39;Nom&#39;: &#39;LANOE&#39;}
-{&#39;Nom&#39;: &#39;DURIEU&#39;}
-{&#39;Nom&#39;: &#39;VONTHRON&#39;}
-{&#39;Nom&#39;: &#39;REGNAULD&#39;}
-{&#39;Nom&#39;: &#39;MARIE&#39;}
-{&#39;Nom&#39;: &#39;BELLAMY&#39;}
-{&#39;Nom&#39;: &#39;DELAROCHE&#39;}
-{&#39;Nom&#39;: &#39;MARTEL&#39;}
-{&#39;Nom&#39;: &#39;DALLIER&#39;}
-{&#39;Nom&#39;: &#39;AUVRAY&#39;}
-{&#39;Nom&#39;: &#39;SARRAZIN&#39;}
-{&#39;Nom&#39;: &#39;HALGATTE&#39;}
-{&#39;Nom&#39;: &#39;HEON&#39;}
-{&#39;Nom&#39;: &#39;HENRY&#39;}
-{&#39;Nom&#39;: &#39;HOCHET&#39;}
-{&#39;Nom&#39;: &#39;HOUEL&#39;}
-{&#39;Nom&#39;: &#39;LEROUX&#39;}
-{&#39;Nom&#39;: &#39;SALLAÏ&#39;}
-{&#39;Nom&#39;: &#39;HAMARD&#39;}
-{&#39;Nom&#39;: &#39;GALLOT&#39;}
-{&#39;Nom&#39;: &#39;COUESBOT&#39;}
-{&#39;Nom&#39;: &#39;LEJEUNE&#39;}
-{&#39;Nom&#39;: &#39;DUREL&#39;}
-{&#39;Nom&#39;: &#39;LECHEVALIER&#39;}
-{&#39;Nom&#39;: &#39;HERVIEU&#39;}
-{&#39;Nom&#39;: &#39;CAUCHARD&#39;}
-{&#39;Nom&#39;: &#39;LEROUX&#39;}
-{&#39;Nom&#39;: &#39;EUSTACHE&#39;}
-{&#39;Nom&#39;: &#39;JANY&#39;}
-{&#39;Nom&#39;: &#39;RICHARD&#39;}
-{&#39;Nom&#39;: &#39;LESOIF&#39;}
-{&#39;Nom&#39;: &#39;SWERTVAEGER&#39;}
-{&#39;Nom&#39;: &#39;DUVAL&#39;}
-{&#39;Nom&#39;: &#39;LEMENOREL&#39;}
-{&#39;Nom&#39;: &#39;SEHIER&#39;}
-{&#39;Nom&#39;: &#39;STILO&#39;}
-{&#39;Nom&#39;: &#39;LE BANNARD&#39;}
-{&#39;Nom&#39;: &#39;BORNE&#39;}
-{&#39;Nom&#39;: &#39;LAURENCE&#39;}
-{&#39;Nom&#39;: &#39;SAUVAGE&#39;}
-{&#39;Nom&#39;: &#39;ROULLAND&#39;}
-{&#39;Nom&#39;: &#39;LESIEUR&#39;}
-{&#39;Nom&#39;: &#39;LUYCKX&#39;}
-{&#39;Nom&#39;: &#39;AVICE&#39;}
-{&#39;Nom&#39;: &#39;MICHEL&#39;}
-{&#39;Nom&#39;: &#39;LEMOUSSU&#39;}
-{&#39;Nom&#39;: &#39;FROMENT&#39;}
-{&#39;Nom&#39;: &#39;GUITON&#39;}
-{&#39;Nom&#39;: &#39;LECOMTE&#39;}
-{&#39;Nom&#39;: &#39;HUET&#39;}
-{&#39;Nom&#39;: &#39;BECQUET&#39;}
-{&#39;Nom&#39;: &#39;LETHIMONNIER&#39;}
-{&#39;Nom&#39;: &#39;SWERTVAEGER&#39;}
-{&#39;Nom&#39;: &#39;JALON&#39;}
-{&#39;Nom&#39;: &#39;DEBOUT&#39;}
-{&#39;Nom&#39;: &#39;GASTELLIER&#39;}
-{&#39;Nom&#39;: &#39;GIRONIE&#39;}
-{&#39;Nom&#39;: &#39;DABON&#39;}
-{&#39;Nom&#39;: &#39;LECHAUVE&#39;}
-{&#39;Nom&#39;: &#39;DORON&#39;}
-{&#39;Nom&#39;: &#39;LENEVEU&#39;}
-{&#39;Nom&#39;: &#39;LERICHE&#39;}
-{&#39;Nom&#39;: &#39;MANCEL&#39;}
-{&#39;Nom&#39;: &#39;LABOULAIS&#39;}
-{&#39;Nom&#39;: &#39;DUDOUIT&#39;}
-{&#39;Nom&#39;: &#39;MADELAINE&#39;}
-{&#39;Nom&#39;: &#39;BESNARD&#39;}
-{&#39;Nom&#39;: &#39;BELZ&#39;}
-{&#39;Nom&#39;: &#39;BONNET&#39;}
-{&#39;Nom&#39;: &#39;CORNET&#39;}
-{&#39;Nom&#39;: &#39;BEUZELIN&#39;}
-{&#39;Nom&#39;: &#39;GRANDIDIER&#39;}
-{&#39;Nom&#39;: &#39;BELZ&#39;}
-{&#39;Nom&#39;: &#39;HENRY&#39;}
+<pre>{&#39;IdSportif&#39;: 1, &#39;Nom&#39;: &#39;BOUTAHAR&#39;}
+{&#39;IdSportif&#39;: 2, &#39;Nom&#39;: &#39;KERVADEC&#39;}
+{&#39;IdSportif&#39;: 3, &#39;Nom&#39;: &#39;HUE&#39;}
+{&#39;IdSportif&#39;: 4, &#39;Nom&#39;: &#39;DORLEANS&#39;}
+{&#39;IdSportif&#39;: 5, &#39;Nom&#39;: &#39;COMES&#39;}
+{&#39;IdSportif&#39;: 6, &#39;Nom&#39;: &#39;RETALDI&#39;}
+{&#39;IdSportif&#39;: 7, &#39;Nom&#39;: &#39;GOMEZ&#39;}
+{&#39;IdSportif&#39;: 9, &#39;Nom&#39;: &#39;ANTUNES&#39;}
+{&#39;IdSportif&#39;: 14, &#39;Nom&#39;: &#39;CAILLIOT&#39;}
+{&#39;IdSportif&#39;: 21, &#39;Nom&#39;: &#39;LE BOUCHER&#39;}
+{&#39;IdSportif&#39;: 44, &#39;Nom&#39;: &#39;ADIBO&#39;}
+{&#39;IdSportif&#39;: 98, &#39;Nom&#39;: &#39;RICHARD&#39;}
 </pre>
 </div>
 </div>
